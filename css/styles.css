@@ -19,6 +19,7 @@ a {
 }
 
 #googleapps {
+    display: table-cell;
     vertical-align: middle;
     height: 40px;
     width: 40px;
@@ -26,7 +27,7 @@ a {
 }
 
 .material-icons {
-    padding-top: 8px;
+
     vertical-align: middle;
 }
 
