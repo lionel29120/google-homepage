@@ -42,7 +42,7 @@
                 <input type="submit" value="Google Search">
                 <input type="submit" value="I'm Feeling Lucky">
             </div>
-        </form>                      
+        </form>                     
     </div>
     <footer>
         <ul>
@@ -54,7 +54,12 @@
             <ul>
                 <li><a class="nav-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwipgp-VvP3vAhVHOBoKHTxjADcQ8awCCBM&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Fhl%3Den-FR%26fg%3D1&usg=AOvVaw3v6rkh9ii2FzVJE6vzWVrU">Privacy</a></li>
                 <li><a class="nav-link" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwipgp-VvP3vAhVHOBoKHTxjADcQ8qwCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Fhl%3Den-FR%26fg%3D1&usg=AOvVaw0Ue_G73RHCLOPueiiduTLb">Terms</a></li>
-                <li><a class="nav-link" href="#">Settings</a></li>
+                <!--<li><a id="settings" class="nav-link" href="#">Settings</a></li>-->
+                <li>
+                    <label id="settings" class="nav-link" for="toggle-1">Settings</label>
+                    <input type="checkbox" id="toggle-1" class="visually-hidden">
+                    <div id="settings-box">I'm controlled by toggle. No JavaScript!</div>
+                </li>
             </ul>
         </span>
     </footer>
