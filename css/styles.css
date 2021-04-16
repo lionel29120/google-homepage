@@ -177,18 +177,74 @@ footer li {
     margin-right: 30px;
 }
 
+
+
+/*This part manage the menu that appears when clicking on the link Settings at the bottom of the page*/
+/****************/
+/*BEGIN*/
+/****************/
+
+
+/*move the checkbox out of scree so it's not visible*/
 .visually-hidden {
     position: absolute;
     left: -100vw;
 }
 
-#settings-box{
-    position: absolute;
-    right: 0;
-    bottom: 30px;
+/*Main div: this div is "hidden" on its original state*/
+#settings-box {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    padding: 0;
+    margin: 0;
     opacity: 0;
+    height: 0;
+    width: 0;
 }
 
+/*label that is used to uncheck the checkbox with no size at original state*/
+#blank {
+    color: transparent;
+    font-size: 0;
+}
+
+/*Search settings panel as its original state displayed out of the screen to not be visible*/
+#search-settings-panel {
+    position: fixed;
+    width: 165px;
+    height: 282px;
+    background-color: tomato;
+    right: -165px;
+    bottom: 50px;
+    color: black;
+    border: 1px solid #222;
+}
+
+#search-settings-panel ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+/*Main div options when checkbox is on*/
 #toggle-1:checked ~ #settings-box {
     opacity: 100;
+    
 }
+
+/*Label option when checkbox in on: the font is high in order the label takes all the screen so it's clickable anywhere*/
+#toggle-1:checked ~ #settings-box #blank {
+    font-size: 300vw;
+}
+
+/*change position of settings options panel to be visible when checkbox is on*/
+#toggle-1:checked ~ #settings-box #search-settings-panel {
+    right: 25px;
+    bottom: 50px;
+}
+
+/****************/
+/*END*/
+/****************/
