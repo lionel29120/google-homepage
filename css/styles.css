@@ -40,6 +40,11 @@ a {
 #googleapps:hover {
     border-radius: 50%;
     background: #f2f2f2;
+    cursor: pointer;
+}
+
+#apps:hover {
+    cursor: pointer;
 }
 
 nav {
@@ -253,3 +258,81 @@ footer li {
 /****************/
 /*END*/
 /****************/
+
+
+/*Main div: this div is "hidden" on its original state*/
+#apps-box {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+/*label that is used to uncheck the checkbox with no size at original state*/
+#blank2 {
+    color: transparent;
+    font-size: 0;
+}
+
+/*apps panel as its original state displayed out of the screen to not be visible*/
+#apps-panel {
+    background-color: white;
+    height: /*448px*/ 70vh;
+    width: 328px;
+    padding: 3px 6px 9px 6px;
+    display: initial;
+    position: fixed;
+    right: 20px;
+    top: 67px;
+    overflow-y: auto;
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+    box-shadow: 0 0 2px 3px #e6e6e6;
+}
+
+#apps-panel ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#apps-panel li {
+    color: #70757a;
+    padding: 15px;
+}
+
+/*Main div options when checkbox is on*/
+#toggle-2:checked ~ #apps-box {
+    opacity: 100;
+    z-index: 1;
+}
+
+/*Label option when checkbox in on: the font is high in order the label takes all the screen so it's clickable anywhere*/
+#toggle-2:checked ~ #apps-box #blank2 {
+    font-size: 300vw;
+}
+
+/*change position of settings options panel to be visible when checkbox is on*/
+#toggle-2:checked ~ #settings-box #apps-panel {
+}
+
+/*#apps-panel {
+    background-color: white;
+    height: 309px;
+    width: 328px;
+    padding: 3px 6px 9px 6px;
+    display:initial;
+    position: absolute;
+    right: 20px;
+    top: 67px;
+    overflow-y: auto;
+    border-radius: 8px;
+    border: 1px solid #b8b8b8;
+    box-shadow: 0 0 2px 3px #e6e6e6;
+}*/
