@@ -162,7 +162,7 @@ footer {
     overflow-x: hidden;
     height: 50px;
     align-items: center;
-    overflow-y: hidden;
+
     }
 
 footer li {
@@ -214,18 +214,23 @@ footer li {
     position: fixed;
     width: 165px;
     height: 282px;
-    background-color: tomato;
+    background: white;
     right: -165px;
     bottom: 50px;
-    color: black;
     border: 1px solid #222;
 }
 
 #search-settings-panel ul {
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+#search-settings-panel li {
+    color: #70757a;
+    padding: 15px;
 }
 
 /*Main div options when checkbox is on*/
