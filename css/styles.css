@@ -322,6 +322,31 @@ footer li {
 #toggle-2:checked ~ #settings-box #apps-panel {
 }
 
+.separator {
+    display: block;
+    border-bottom: 1px solid #e8eaed;
+    margin: 6px 0;
+}
+
+.more-options {
+    text-align: center;
+}
+
+.more-btn {
+    background-color: #fff;
+    display: inline-block;
+    margin: 16px 0 20px 0;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    color: #1a73e8;
+    padding: 10px 24px;
+    text-align: center;
+}
+
+.more-btn:hover {
+    background-color: #f8fbff;
+}
+
 /*#apps-panel {
     background-color: white;
     height: 309px;
