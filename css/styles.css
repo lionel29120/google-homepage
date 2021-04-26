@@ -363,6 +363,138 @@ footer li {
     font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 }
 
+#account-app {
+    background-position: 0 -1587px;
+}
+
+#search-app {
+    background-position: 0 -1794px;
+}
+
+#maps-app {
+    background-position: 0 -483px;
+}
+
+#youtube-app {
+    background-position: 0 -2622px;
+}
+
+#play-app {
+    background-position: 0 -207px;
+}
+
+#news-app {
+    background-position: 0 -1311px;
+}
+
+#gmail-app {
+    background-position: 0 -2001px;
+}
+
+#meet-app {
+    background-position: 0 -690px;
+}
+
+#chat-app {
+    background-position: 0 -1656px;
+}
+
+#contacts-app {
+    background-position: 0 -2898px;
+}
+
+#drive-app {
+    background-position: 0 -2967px;
+}
+
+#calendar-app {
+    background-position: 0 -2553px;
+}
+
+#translate-app {
+    background-position: 0 -1932px;
+}
+
+#photos-app {
+    background-position: 0 -2829px;
+}
+
+#duo-app {
+    background-position: 0 -2484px;
+}
+
+#chrome-app {
+    background-position: 0 -2346px;
+}
+
+#shopping-app {
+    background-position: 0 -69px;
+}
+
+#docs-app {
+    background-position: à -1242px;
+}
+
+#sheets-app {
+    background-position: 0 -2208px;
+}
+
+#slides-app {
+    background-position: 0 -2277px;
+}
+
+#books-app {
+    background-position: 0 -2760px;
+}
+
+#blogger-app {
+    background-position: 0 -1863px;
+}
+
+#hangouts-app {
+    background-position: 0 -2415px;
+}
+
+#keep-app {
+    background-position: 0 -276px;
+}
+
+#jamboard-app {
+    background-position: 0 -2070px;
+}
+
+#earth-app {
+    background-position: 0 -1380px;
+}
+
+#collections-app {
+    background-position: 0 -621px;
+}
+
+#artsandculture-app {
+    background-position: 0 -1518px;
+}
+
+#googleads-app {
+    background-position: 0 -414px;
+}
+
+#podcasts-app {
+    background-position: 0 -552px;
+}
+
+#stadia-app {
+    background-position: 0 -828px;
+}
+
+#travel-app {
+    background-position: 0 -3036px;
+}
+
+#forms-app {
+    background-position: 0 -2139px;
+}
+
 .separator {
     display: block;
     border-bottom: 1px solid #e8eaed;
