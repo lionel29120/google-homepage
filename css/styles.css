@@ -87,11 +87,13 @@ nav li {
 
 #container {
     display: flex;
+    height: calc(100vh - 110px);
+    min-height: 279px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
-    margin-bottom: 70px;
+    /*margin-top: 20vh;
+    margin-bottom: 70px;*/
 }
 
 #formulaire {
@@ -153,10 +155,10 @@ input[type="submit"]:hover {
 }
 
 footer {
-    position: fixed;
+    /*position: fixed;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0;*/
     display: flex;
     justify-content: space-between;
     font-size: 14px;
