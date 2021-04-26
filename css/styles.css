@@ -6,6 +6,7 @@ body {
 
 header {
     width: 100vw;
+    min-width: 602px;
 }
 
 ul {
@@ -92,8 +93,11 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    min-width: 602px;
     /*margin-top: 20vh;
     margin-bottom: 70px;*/
+    overflow-x: hidden;
 }
 
 #formulaire {
@@ -166,10 +170,10 @@ footer {
     background: #f2f2f2;
     border-top: 1px solid #e4e4e4;
     width: 100vw;
-    overflow-x: hidden;
+    overflow: hidden;
     height: 50px;
     align-items: center;
-
+    min-width: 602px;
     }
 
 footer li {
@@ -264,20 +268,27 @@ footer li {
 
 /*Main div: this div is "hidden" on its original state*/
 #apps-box {
-    position: fixed;
-    top: -60px;
+    display: block;
+    position: absolute;
+    top: 0px;
     left: 0;
     padding: 0;
     margin: 0;
     opacity: 0;
-    height: 0;
-    width: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    overflow-x: hidden;
 }
 
 /*label that is used to uncheck the checkbox with no size at original state*/
 #blank2 {
+    position: fixed;
+    top: O;
+    left: 0;
     color: transparent;
     font-size: 0;
+    overflow-x: hidden;
 }
 
 /*apps panel as its original state displayed out of the screen to not be visible*/
@@ -287,8 +298,8 @@ footer li {
     width: 328px;
     padding: 3px 6px 9px 6px;
     display: initial;
-    position: fixed;
-    right: 20px;
+    position: absolute;
+    left: calc(100vw - 368px);
     top: 67px;
     overflow-y: auto;
     border-radius: 8px;
