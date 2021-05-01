@@ -204,14 +204,26 @@ footer li {
 
 /*Main div: this div is "hidden" on its original state*/
 #settings-box {
-    position: fixed;
+    /*position: fixed;
     top: -60px;
     left: 0;
     padding: 0;
     margin: 0;
     opacity: 0;
     height: 0;
-    width: 0;
+    width: 0;*/
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    min-height: 390px;
+    z-index: -1;
+    overflow: hidden;
 }
 
 /*label that is used to uncheck the checkbox with no size at original state*/
@@ -222,7 +234,8 @@ footer li {
 
 /*Search settings panel as its original state displayed out of the screen to not be visible*/
 #search-settings-panel {
-    position: fixed;
+    /*position: fixed;*/
+    position: absolute;
     width: 165px;
     height: 282px;
     background: white;
@@ -247,7 +260,7 @@ footer li {
 /*Main div options when checkbox is on*/
 #toggle-1:checked ~ #settings-box {
     opacity: 100;
-    
+    z-index: 1;
 }
 
 /*Label option when checkbox in on: the font is high in order the label takes all the screen so it's clickable anywhere*/
